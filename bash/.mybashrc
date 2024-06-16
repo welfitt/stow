@@ -1,0 +1,12 @@
+
+if [[ -n $NVIM ]]
+then
+    export PS1=$PS1">>"
+    set -o vi
+        alias v=nvr
+        alias vi=nvr
+        alias nvim=nvr
+fi
+export VIMCONFIG=~/.config/nvim
+export VIMDATA=~/.local/share/nvim
+export STOW_DIR=~/.dotfiles
