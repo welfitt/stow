@@ -13,9 +13,9 @@ vim.opt.conceallevel = 2
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 vim.opt_local.makeprg = "javac %"
-vim.keymap.set('n', '<leader>c', '<Plug>OSCYankOperator')
+vim.keymap.set('n', '<leader>y', '<Plug>OSCYankOperator')
 vim.keymap.set('n', '<leader>cc', '<leader>c_', {remap = true})
-vim.keymap.set('v', '<leader>c', '<Plug>OSCYankVisual')
+vim.keymap.set('v', '<leader>y', '<Plug>OSCYankVisual')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>t', ':terminal<CR>i')
 vim.keymap.set('n', '<leader>u', 'odefault_tags = { yor_trace = ":r! uuidgen<CR>kJxA"}Vu')
