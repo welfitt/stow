@@ -10,3 +10,4 @@ fi
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export STOW_DIR=~/.dotfiles
+complete -C '/usr/local/bin/aws_completer' aws
