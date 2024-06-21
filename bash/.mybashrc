@@ -11,3 +11,10 @@ export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export STOW_DIR=~/.dotfiles
 complete -C '/usr/local/bin/aws_completer' aws
+
+
+#  Now for the poo
+if [[ $OSTYPE == "darwin"* ]]
+then
+  alias vmstat=vm_stat
+fi
