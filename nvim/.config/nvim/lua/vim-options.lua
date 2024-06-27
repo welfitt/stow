@@ -19,6 +19,8 @@ vim.keymap.set('v', '<leader>y', '<Plug>OSCYankVisual')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>t', ':terminal<CR>i')
 vim.keymap.set('n', '<leader>u', 'odefault_tags = { yor_trace = ":r! uuidgen<CR>kJxA"}Vu')
+vim.keymap.set('n', '<leader>U', 'i\\k:r!uuidgen<CR>kJAVukJJF xf x')
+vim.keymap.set('n', '<leader>j', 'i\\k:r!uuidgen<CR>')
 vim.keymap.set('n', '<leader>w', '<C-w>')
 vim.keymap.set('t', '<C-t>', '<C-\\><C-n>')
 
