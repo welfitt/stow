@@ -1,3 +1,13 @@
+
+#  For the mac book poo... pro I meant pro not poo
+if [[ $OSTYPE == "darwin"* ]]
+then
+  alias vmstat=vm_stat
+  __git_ps1() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+  }
+fi
+
 export PS1='\u@\h \[\e[32m\]\w \[\e[91m\]$(__git_ps1)\[\e[00m\]$ '
 if [[ -n $NVIM ]]
 then
@@ -11,12 +21,5 @@ export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export STOW_DIR=~/.dotfiles
 complete -C '/usr/local/bin/aws_completer' aws
-
-
-#  Now for the poo
-if [[ $OSTYPE == "darwin"* ]]
-then
-  alias vmstat=vm_stat
-fi
 export HISTSIZE=10000
 export HISTFILESIZE=10000
