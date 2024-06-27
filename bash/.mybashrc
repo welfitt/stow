@@ -8,7 +8,7 @@ then
   }
 fi
 
-export PS1='\u \[\e[32m\]\w \[\e[91m\]$(__git_ps1)\[\e[00m\]$ '
+export PS1='\u \[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]$ '
 if [[ -n $NVIM ]]
 then
     export PS1=$PS1">>"
