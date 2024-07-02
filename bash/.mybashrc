@@ -5,7 +5,8 @@ then
 
   emoji=$(echo -e "\U1F92E")
   emoji2=$(echo -e "\U1F4A9")
-  export PS1="$emoji2 $emoji"'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]$ '
+  emoji3=$(echo -e "\U1F92C")
+  export PS1="$emoji3 $emoji2 $emoji"'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]$ '
   alias vmstat=vm_stat
   __git_ps1() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
