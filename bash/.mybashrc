@@ -2,7 +2,6 @@
 #  For the mac book poo... pro I meant pro not poo
 if [[ $OSTYPE == "darwin"* ]]
 then
-apoopuk
   vomit_emoji=$(echo -e "\U1F92E")
   poo_emoji=$(echo -e "\U1F4A9")
   angry_emoji=$(echo -e "\U1F92C")
