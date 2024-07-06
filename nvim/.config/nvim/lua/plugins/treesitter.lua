@@ -18,7 +18,7 @@ return {
     config = function()
       local config = require("nvim-treesitter.configs")
       config.setup({
-          ensure_installed = { "terraform", "hcl" },
+          ensure_installed = { "terraform", "hcl", "lua", "bash", "c", "vim", "vimdoc", "json", "yaml", "html", "css", "javascript",  "python", "go",  "java", "dockerfile", "graphql"},
         auto_install = true,
         highlight = { enable = true },
         indent = { enable = true },
