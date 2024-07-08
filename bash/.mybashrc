@@ -31,5 +31,4 @@ export STOW_DIR=~/.dotfiles
 complete -C '/usr/local/bin/aws_completer' aws
 export HISTSIZE=10000
 export HISTFILESIZE=10000
-alias bat="batcat"
-alias inv='nvim $(fzf -m --preview "batcat {}")'
+alias inv='nvim $(fzf -m --preview "bat {}")'
