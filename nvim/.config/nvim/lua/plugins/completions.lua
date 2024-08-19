@@ -1,6 +1,14 @@
+
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+
 return {
   {
     "github/copilot.vim",
+    enabled = not file_exists("/etc/zshrc"),
 		config = function()
       vim.keymap.set('i', '<M-j>','<Plug>(copilot-next)')
       vim.keymap.set('i', '<M-k>','<Plug>(copilot-previous)')
