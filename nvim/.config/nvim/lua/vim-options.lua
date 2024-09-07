@@ -16,6 +16,7 @@ vim.opt_local.makeprg = "javac %"
 vim.keymap.set('n', '<leader>y', '<Plug>OSCYankOperator')
 vim.keymap.set('n', '<leader>cc', '<leader>c_', {remap = true})
 vim.keymap.set('v', '<leader>y', '<Plug>OSCYankVisual')
+vim.keymap.set('n', '<leader>pp', '"+p')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>s', 'I`<ESC>A`<ESC>j')
 vim.keymap.set('v', '<leader>s', 'I`<ESC>gvA`<ESC>')
