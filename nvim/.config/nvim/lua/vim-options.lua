@@ -13,10 +13,10 @@ vim.opt.conceallevel = 2
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 vim.opt_local.makeprg = "javac %"
-vim.keymap.set('n', '<leader>Y', '<Plug>OSCYankOperator')
+vim.keymap.set('n', '<leader>y', '<Plug>OSCYankOperator')
 vim.keymap.set('n', '<leader>cc', '<leader>c_', {remap = true})
-vim.keymap.set('v', '<leader>Y', '<Plug>OSCYankVisual')
-vim.keymap.set('n', '<leader>P', '"+p')
+vim.keymap.set('v', '<leader>y', '<Plug>OSCYankVisual')
+vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>s', 'I`<ESC>A`<ESC>j')
 vim.keymap.set('v', '<leader>s', 'I`<ESC>gvA`<ESC>')

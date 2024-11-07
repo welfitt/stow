@@ -14,8 +14,8 @@ return {
       vim.keymap.set('i', '<M-k>','<Plug>(copilot-previous)')
       vim.keymap.set('i', '<M-l>','<Plug>(copilot-accept-word)')
       vim.keymap.set('i', '<M-;>','<Plug>(copilot-accept-line)')
-      vim.keymap.set('n', '<leader>pd',':Copilot disable<CR>')
-      vim.keymap.set('n', '<leader>pe',':Copilot enable<CR>')
+      vim.keymap.set('n', '<leader>Pd',':Copilot disable<CR>')
+      vim.keymap.set('n', '<leader>Pe',':Copilot enable<CR>')
     end,
   },
 	{
