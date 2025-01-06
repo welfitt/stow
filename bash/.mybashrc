@@ -10,6 +10,9 @@ then
   __git_ps1() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
   }
+  alias ll='ls -alF'
+  alias la='ls -A'
+  alias l='ls -CF'
 else
 export PS1='\u \[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]$ '
 fi
