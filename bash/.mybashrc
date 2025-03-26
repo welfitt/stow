@@ -27,6 +27,8 @@ then
 fi
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
+# Set rg as the default source for fzf, it ignores .gitignore files inside a repo
+export FZF_DEFAULT_COMMAND='rg --files'
 
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
