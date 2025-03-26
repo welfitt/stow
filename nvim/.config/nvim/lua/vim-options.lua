@@ -26,4 +26,4 @@ vim.keymap.set('n', '<leader>u', 'odefault_tags = { yor_trace = ":r! uuidgen<CR
 vim.keymap.set('n', '<leader>U', 'i\\k:r!uuidgen<CR>kJAVukJJF xf x')
 vim.keymap.set('n', '<leader>j', 'i\\k:r!uuidgen<CR>')
 vim.keymap.set('n', '<leader>w', '<C-w>')
-vim.keymap.set('t', '<C-t>', '<C-\\><C-n>')
+--vim.keymap.set('t', '<C-t>', '<C-\\><C-n>')
