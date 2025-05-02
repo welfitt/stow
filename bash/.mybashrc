@@ -5,7 +5,9 @@ then
   vomit_emoji=$(echo -e "\U1F92E")
   poo_emoji=$(echo -e "\U1F4A9")
   angry_emoji=$(echo -e "\U1F92C")
-  export PS1="$poo_emoji $vomit_emoji $angry_emoji"'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]\n$'
+  apple_emoji=$(echo -e "\U1F34F")
+
+  export PS1="$apple_emoji $poo_emoji $vomit_emoji"'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]\n$'
   alias vmstat=vm_stat
   __git_ps1() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
