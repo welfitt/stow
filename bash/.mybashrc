@@ -8,11 +8,11 @@ then
   apple_emoji=$(echo -e "\U1F34F")
   snail_emoji=$(echo -e "\U1F40C")
 
-  export PS1="$apple_emoji $poo_emoji $snail_emoji "'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]\n$'
   alias vmstat=vm_stat
   __git_ps1() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
   }
+  export PS1="$apple_emoji $poo_emoji $snail_emoji "'\[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]\n$'
   alias ll='ls -alF'
   alias la='ls -A'
   alias l='ls -CF'
