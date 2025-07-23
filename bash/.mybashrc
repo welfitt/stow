@@ -16,8 +16,10 @@ then
   alias ll='ls -alF'
   alias la='ls -A'
   alias l='ls -CF'
+alias td=~/.dotfiles/bash/bin/td_pooh.bash
 else
 export PS1='\u \[\e[32m\]\w \[\e[38;5;45m\]$(__git_ps1)\[\e[00m\]$ '
+alias td=~/.dotfiles/bash/bin/td.bash
 fi
 
 if [[ -n $NVIM ]]
