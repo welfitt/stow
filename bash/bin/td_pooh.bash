@@ -6,7 +6,6 @@ else
 	session_name="$1"
 fi
 
-session_name="td"
 if tmux has-session -t $session_name 2>/dev/null; then
 	echo "Using existing tmux session $session_name"
 else
