@@ -1,23 +1,25 @@
-
 function file_exists(name)
    local f=io.open(name,"r")
    if f~=nil then io.close(f) return true else return false end
 end
 
-
 return {
-  {
+    {
     "github/copilot.vim",
-    enabled = not file_exists("/etc/zshrc"),
-		config = function()
+--[[    
+      enabled = not file_exists("/etc/zshrc"),
+    ]]
+    enabled = false,
+     
+      config = function()
       vim.keymap.set('i', '<M-j>','<Plug>(copilot-next)')
-      vim.keymap.set('i', '<M-k>','<Plug>(copilot-previous)')
-      vim.keymap.set('i', '<M-l>','<Plug>(copilot-accept-word)')
-      vim.keymap.set('i', '<M-;>','<Plug>(copilot-accept-line)')
+        vim.keymap.set('i', '<M-k>','<Plug>(copilot-previous)')
+        vim.keymap.set('i', '<M-l>','<Plug>(copilot-accept-word)')
+        vim.keymap.set('i', '<M-;>','<Plug>(copilot-accept-line)')
       vim.keymap.set('n', '<leader>Pd',':Copilot disable<CR>')
       vim.keymap.set('n', '<leader>Pe',':Copilot enable<CR>')
-    end,
-  },
+      end,
+      },
 	{
 		"hrsh7th/cmp-nvim-lsp",
 	},
